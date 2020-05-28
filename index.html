@@ -6,5 +6,28 @@
   Toggle
 </button>
 
-<link rel="stylesheet" type="text/css" href="app.css">
-<script src="app.js"></script>
+<style type="text/css">
+  html {
+    color: black;
+    transition: color 0.2s ease;
+  }
+
+  html.blue {
+    color: blue;
+  }
+</style>
+<script>
+  let blueState = false;
+
+  const html = document.querySelector('html');
+  const toggle = document.getElementById('toggle-button');
+  toggle.onclick = function() {
+    blueState = !blueState;
+
+    if (blueState) {
+      html.classList.add('blue')
+    } else {
+      html.classList.remove('blue');
+    }
+  }
+</script>

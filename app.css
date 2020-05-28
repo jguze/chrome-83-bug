@@ -1,8 +1,0 @@
-html {
-  color: black;
-  transition: color 0.2s ease;
-}
-
-html.blue {
-  color: blue;
-}
